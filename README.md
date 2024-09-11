@@ -11,15 +11,21 @@ This project is a **Streamlit-based web application** named **"URL2Email"** desi
 1. **Streamlit Interface:**
    - **User Input:** Users provide a URL that points to a webpage containing job descriptions.
    - **Submit Button:** A button to trigger the scraping and processing of the job descriptions.
+  
+<img width="1440" alt="Screenshot 2024-09-11 at 11 33 16 PM" src="https://github.com/user-attachments/assets/7cc6a2cc-5994-4aa7-aacf-39f366a051b6">
 
 2. **Data Processing:**
    - **WebBaseLoader:** This component is responsible for scraping the content from the provided URL.
    - **Content Cleaning:** The scraped content is cleaned to remove unnecessary text, ensuring that only relevant job descriptions are processed.
    - **Job Extraction:** The application uses a language model (LLM) to analyze the cleaned content and extract individual job descriptions, including details like required skills.
    - **Portfolio Matching:** The app checks the extracted skills against a predefined portfolio to find relevant links or additional information that could be included in the email.
+     
+<img width="1440" alt="Screenshot 2024-09-11 at 11 34 23 PM" src="https://github.com/user-attachments/assets/816bc609-9f06-40ea-93b8-5379da5d257c">
 
 3. **Email Generation:**
    - The app automatically generates cold emails based on the extracted job descriptions and the matched portfolio links. These emails are formatted in Markdown and displayed in the app.
+     
+<img width="1440" alt="Screenshot 2024-09-11 at 11 35 22 PM" src="https://github.com/user-attachments/assets/a4ee91df-a8fd-4302-9c4e-41ea64f79dec">
 
 4. **Error Handling:**
    - The app includes error handling to catch and display any issues that occur during the scraping, processing, or email generation stages.
